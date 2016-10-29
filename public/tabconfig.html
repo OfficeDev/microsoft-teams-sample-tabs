@@ -14,7 +14,7 @@
       </form>
     </div>
 
-    <script src="https://teamspacewusprodms.blob.core.windows.net/tabframework/0.2/MicrosoftTeams.js"></script>
+    <script src="https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js"></script>
 
     <script type="text/javascript">
       microsoftTeams.initialize();
@@ -25,14 +25,14 @@
             contentUrl: "https://www.bing.com/maps/embed",
             suggestedTabName: "Bing Map",
             websiteUrl: "https://www.bing.com/maps",
-            removeUrl: "https://localhost/maps/tabremove.htm"
+            removeUrl: "https://teams-get-started-sample.azurewebsites.net/tabremove.html"
           });
         } else {
           microsoftTeams.settings.setSettings({
             contentUrl: "https://www.google.com/maps/embed",
             suggestedTabName: "Google Map",
             websiteUrl: "https://www.google.com/maps",
-            removeUrl: "https://localhost/maps/tabremove.htm"
+            removeUrl: "https://teams-get-started-sample.azurewebsites.net/tabremove.html"
           });
         }
         saveEvent.notifySuccess();
