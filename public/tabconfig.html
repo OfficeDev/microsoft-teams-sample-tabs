@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Map Tab Config UI</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <form>
+        <input type="radio" name="maptype" value="bing" onclick="onClick()"> Bing Maps
+        <br>
+        <input type="radio" name="maptype" value="google" onclick="onClick()"> Google Maps
+      </form>
+    </div>
+
+    <script src="https://teamspacewusprodms.blob.core.windows.net/tabframework/0.2/MicrosoftTeams.js"></script>
+
+    <script type="text/javascript">
+      microsoftTeams.initialize();
+      microsoftTeams.settings.registerOnSaveHandler(function(saveEvent) {
+        var radios = document.getElementsByName('maptype');
+        if (radios[0].checked) {
+          microsoftTeams.settings.setSettings({
+            contentUrl: "https://www.bing.com/maps/embed",
+            suggestedTabName: "Bing Map",
+            websiteUrl: "https://www.bing.com/maps",
+            removeUrl: "https://localhost/maps/tabremove.htm"
+          });
+        } else {
+          microsoftTeams.settings.setSettings({
+            contentUrl: "https://www.google.com/maps/embed",
+            suggestedTabName: "Google Map",
+            websiteUrl: "https://www.google.com/maps",
+            removeUrl: "https://localhost/maps/tabremove.htm"
+          });
+        }
+        saveEvent.notifySuccess();
+      });
+
+      function onClick() {
+        microsoftTeams.settings.setValidityState(true);
+      }
+    </script>
+  </body>
+</html>

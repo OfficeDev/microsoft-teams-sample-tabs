@@ -1,0 +1,23 @@
+{
+  "name": "microsoft-teams-sample-get-started",
+  "version": "1.0.0",
+  "author": {
+    "name": "Microsoft"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/OfficeDev/microsoft-teams-sample-get-started.git"
+  },
+  "bugs": {
+    "url": "https://github.com/OfficeDev/microsoft-teams-sample-get-started/issues"
+  },
+  "homepage": "https://github.com/OfficeDev/microsoft-teams-sample-get-started#readme",
+  "private": true,
+  "scripts": {
+    "start": "npm install && node server.js"
+  },
+  "dependencies": {
+    "express": "^4.14.0",
+    "serve-static": "^1.11.1"
+  }
+}

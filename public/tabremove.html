@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Map Tab Remove UI</title>
+  </head>
+
+  <body>
+    <div id="container">
+      <form>
+        <input type="radio" name="removetype" value="delete" onclick="onClick()">Delete this map and all data the team added to it?
+        <br>
+        <input type="radio" name="removetype" value="keep" onclick="onClick()">Keep this map available for use at <a href='https://maps.bing.com' target='_blank'>https://maps.bing.com</a>
+      </form>
+    </div>
+
+    <script src="https://teamspacewusprodms.blob.core.windows.net/tabframework/0.2/MicrosoftTeams.js"></script>
+
+    <script type="text/javascript">
+      microsoftTeams.initialize();
+      microsoftTeams.settings.registerOnRemoveHandler(function(removeEvent) {
+        var radios = document.getElementsByName('removetype');
+        if (radios[0].checked) {
+          // Delete the map and all its data from the underlying service.
+        }
+        removeEvent.notifySuccess();
+      });
+
+      function onClick() {
+        microsoftTeams.settings.setValidityState(true);
+      }
+    </script>
+  </body>
+</html>
