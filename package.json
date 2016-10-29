@@ -14,7 +14,7 @@
   "homepage": "https://github.com/OfficeDev/microsoft-teams-sample-get-started#readme",
   "private": true,
   "scripts": {
-    "start": "npm install && node server.js"
+    "start": "node server.js"
   },
   "dependencies": {
     "express": "^4.14.0",
