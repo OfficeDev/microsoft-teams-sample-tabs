@@ -24,7 +24,7 @@ An [Office 365 account with access to Microsoft Teams]().
 
 ## Adapt the app yourself
 
-This sample works because its [configuration page]() (tabconfig.html) and [removal options page]() (tabremove.html) are hosted in Azure at `https://teams-get-started-sample.azurewebsites.net`.  If you want to adapt this sample, you'll need to edit them and host them yourself.  
+This sample works because its [configuration page]() (tabconfig.html) and [removal options page]() (tabremove.html) are already hosted in Azure at `https://teams-get-started-sample.azurewebsites.net`.  If you want to adapt this sample, you'll need to edit them and host them yourself.  
 
 **TODO fix links**
 
