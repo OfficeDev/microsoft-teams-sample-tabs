@@ -1,20 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <title>Map Tab Remove UI</title>
-  </head>
-
   <body>
-    <div id="container">
-      <form>
-        <input type="radio" name="removetype" value="delete" onclick="onClick()">Delete this map and all data the team added to it?
-        <br>
-        <input type="radio" name="removetype" value="keep" onclick="onClick()">Keep this map available for use at <a href='https://maps.bing.com' target='_blank'>https://maps.bing.com</a>
-      </form>
-    </div>
+    <form>
+      <input type="radio" name="removetype" value="delete" onclick="onClick()">Delete this map and all data the team added to it?
+      <br>
+      <input type="radio" name="removetype" value="keep" onclick="onClick()">Keep this map available for use at <a href='https://maps.bing.com' target='_blank'>https://maps.bing.com</a>
+    </form>
 
-    <script src="https://teamspacewusprodms.blob.core.windows.net/tabframework/0.2/MicrosoftTeams.js"></script>
+    <script src="https://statics.teams.microsoft.com/sdk/v0.2/js/MicrosoftTeams.js"></script>
 
     <script type="text/javascript">
       microsoftTeams.initialize();
