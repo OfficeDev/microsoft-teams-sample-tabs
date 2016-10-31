@@ -12,7 +12,7 @@ An [Office 365 account with access to Microsoft Teams]().
 
 ## Run the app
 
-1. Download the [tab app package](https://github.com/OfficeDev/microsoft-teams-sample-get-started/blob/master/manifest/MapsTab.zip) for this sample. 
+1. Download the [tab app package](https://github.com/OfficeDev/microsoft-teams-sample-get-started/blob/master/package/MapsTab.zip) for this sample. 
 2. Create a new team for testing, if necessary.  Click **Create team** at the bottom of the left-hand panel.
 3. Select the team from the left-hand panel, select **... (more options)** and then select **View Team**.
 4. Select the **Developer (Preview)** tab, and then select **Upload**.
@@ -29,18 +29,19 @@ This sample works because its [configuration page]() (tabconfig.html) and [remov
 **TODO fix links**
 
 1. Clone the repo
-2. Extract `manifest/MapsTab.zip`
+2. Navigate to the `package` directory.
 3. Edit `manifest.json`
    1. Change `id` to your own domain in reverse notation.
    2. Change `configUrl` to `https://localhost:3000/public/tabconfig.html`
 4. Optionally, make a simple change to `maps44.png` and `maps88.png` in an image editor. This will help you later to verify your own copy of the tab is running. 
 5. Put `manifest.json`, `maps44.png`, `maps88.png` into a new tab app package called `NewTab.zip`
-5. Edit `public/tab.config.html` so that the `removeUrl` it returns (in two places) is `https://localhost:3000/public/tabremove.html`
-7. Optionally, make a simple change to the visible text in the forms in `public/tab.config.html` and `public/tab.remove.html`. This will help you later to verify your own copy of the tab is running.
-8. Navigate to the repo root
-9. `npm install`
-10. `npm start`
-11. Upload and test your new tab package, `NewTab.zip`, using the instructions above.
+5. Edit `public/tabconfig.html` so that the `removeUrl` it returns (in two places) is `https://localhost:3000/public/tabremove.html`
+7. Optionally, make a simple change to the visible text in the forms in `public/tabconfig.html` and `public/tabremove.html`. This will help you later to verify your own copy of the tab is running.
+8. Install [node.js](https://nodejs.org) if you don't already have it. 
+9. Navigate to the repo root
+10. `npm install`
+11. `npm start`
+12. Upload and test your new tab package, `NewTab.zip`, using the instructions above.
 
 > **Note:** To re-upload an updated package, with the same `id`, click the 'Replace' icon at the end of the tab's table row.  Don't click 'Upload' again: Microsoft Teams will say the tab already exists.
 
