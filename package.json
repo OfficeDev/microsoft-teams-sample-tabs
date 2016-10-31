@@ -14,10 +14,16 @@
   "homepage": "https://github.com/OfficeDev/microsoft-teams-sample-get-started#readme",
   "private": true,
   "scripts": {
-    "start": "node server.js"
+    "start": "node server.js",
+    "start-ssl": "node server.js --ssl",
+    "start-ngrok": "node server.js --ngrok"
   },
   "dependencies": {
     "express": "^4.14.0",
+    "optimist": "^0.6.1",
     "serve-static": "^1.11.1"
+  },
+  "devDependencies": {
+    "ngrok": "^2.2.3"
   }
 }
