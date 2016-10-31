@@ -24,7 +24,7 @@ An [Office 365 account with access to Microsoft Teams]().
 
 ## Adapt the app yourself
 
-This sample works because its [configuration page]() (tabconfig.html) and [removal options page]() (tabremove.html) are already hosted in Azure at `https://teams-get-started-sample.azurewebsites.net`. If you want to adapt this sample, you'll need to edit them and host them yourself. Since Microsoft Teams requires all tab pages and content to be served over https,
+This sample works because its [configuration page](https://teams-get-started-sample.azurewebsites.net/tabconfig.html) and [removal options page](https://teams-get-started-sample.azurewebsites.net/tabremove.html) are already hosted in Azure at `https://teams-get-started-sample.azurewebsites.net`. If you want to adapt this sample, you'll need to edit them and host them yourself. Since Microsoft Teams requires all tab pages and content to be served over https,
 
 1. Clone the repo
 2. [Optional] Make a simple change to the visible text in the `public/tabconfig.html` and `public/tabremove.html` pages. This will help you later to verify your own copy of the tab is running.
@@ -33,10 +33,10 @@ This sample works because its [configuration page]() (tabconfig.html) and [remov
 5. Edit `manifest.json`:
    1. Change `id` to your own domain in reverse notation.
    2. Change `configUrl` to the address of the `tabconfig.html` page from step 3.
-   3. [Optional] change `accentColor` to some color other than the default. This will help you later to verify your own copy of the tab is running.
-6. [Optional] make a simple change to `maps44.png` and `maps88.png` in an image editor. This will help you later to verify your own copy of the tab is running.
+   3. [Optional] Change `accentColor` to some color other than the default. This will help you later to verify your own copy of the tab is running.
+6. [Optional] Make a simple change to `maps44.png` and `maps88.png` in an image editor. This will help you later to verify your own copy of the tab is running.
 7. Zip up `manifest.json`, `maps44.png`, `maps88.png` into a new tab app package called `NewTab.zip`
-12. Upload and test your new tab package, `NewTab.zip`, using the [instructions above](#run-the-app).
+8. Upload and test your new tab package, `NewTab.zip`, using the [instructions above](#run-the-app).
 
 > **Note:** To re-upload an updated package, with the same `id`, click the 'Replace' icon at the end of the tab's table row.  Don't click 'Upload' again: Microsoft Teams will say the tab already exists.
 
@@ -45,26 +45,26 @@ This sample works because its [configuration page]() (tabconfig.html) and [remov
 In order to protect customers and their data Microsoft Teams requires all tab pages and content to be served over https. If you already have a preferred method for doing this then feel free to skip this section. Otherwise, here are a few options to get you started.
 
 ### Using ngrok
+
 1. Install [node.js](https://nodejs.org) if you don't already have it.
 2. Navigate to the repo root and run:
-
-        npm install
-        npm run start-ngrok
-
-3. Use the https URL displayed on the command line for step 5 above. It will look something like `https://<partial-guid>.ngrok.io/tabconfig.html`.
+    1. npm install
+    2. npm run start-ngrok
+3. Use the https URL displayed on the command line as the origin of the `tabconfig.html` page in step 5 above. It should look something like `https://<partial-guid>.ngrok.io/tabconfig.html`.
 
 ### Self-signed SSL certificate (Mac only)
+
 1. Install [node.js](https://nodejs.org) if you don't already have it.
 2. Navigate to the repo root and run:
-
-        openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -nodes
-        npm install
-        npm run start-ssl
-
-3. Use the https URL displayed on the command line for step 5 above. It will look something like `https://localhost:3000/tabconfig.html`.
+    1. openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -nodes
+    2. npm install
+    3. npm run start-ssl
+3. Use the https URL displayed on the command line as the origin of the `tabconfig.html` page in step 5 above. It will look something like `https://localhost:3443/tabconfig.html`.
 
 ### Using IIS (Windows only)
+
 **TODO add instructions**
 
 ### Deploy to Azure
+
 **TODO add link to instructions**
