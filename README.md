@@ -69,3 +69,6 @@ In order to protect customer data, Microsoft Teams requires all tab pages and co
 ### Deploy to Azure or other cloud computing service
 
 [Get started here](https://azure.microsoft.com)
+
+## Copyright
+Copyright (c) 2016 Microsoft Corporation. All rights reserved.
