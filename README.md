@@ -27,7 +27,6 @@ This sample works because its [configuration page](https://msdn.microsoft.com/en
 1. Clone the repo
 2. [Optional] Make a simple change to the visible text in the `public/tabconfig.html` and `public/tabremove.html` pages. This will help you later to verify your own copy of the tab is running.
 3. Host the `tabconfig.html` and `tabremove.html` pages over https (see below for options).
-4. Update the code in `tabconfig.html` so that the `removeUrl` it returns to Microsoft Teams (in two separate places) points to the new address of `tabremove.html` page from step 3. 
 4. Navigate to the `package` directory.
 5. Edit `manifest.json`:
    1. Change `id` to your own domain in reverse notation.
