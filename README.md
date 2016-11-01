@@ -6,9 +6,7 @@ This app is used throughout the Microsoft Teams [developer documentation](https:
 
 ## Prerequisites
 
-An [Office 365 account with access to Microsoft Teams]().
-
-**TODO make this a link to setup.md in main docs repo**
+An [Office 365 account with access to Microsoft Teams](https://msdn.microsoft.com/en-us/microsoft-teams/setup).
 
 ## Run the app
 
@@ -24,15 +22,16 @@ An [Office 365 account with access to Microsoft Teams]().
 
 ## Adapt the app yourself
 
-This sample works because its [configuration page](https://teams-get-started-sample.azurewebsites.net/tabconfig.html) and [removal options page](https://teams-get-started-sample.azurewebsites.net/tabremove.html) are already hosted in Azure at `https://teams-get-started-sample.azurewebsites.net`. If you want to adapt this sample, you'll need to edit them and host them yourself. Since Microsoft Teams requires all tab pages and content to be served over https,
+This sample works because its [configuration page](https://msdn.microsoft.com/en-us/microsoft-teams/createconfigpage) and [removal options page](https://msdn.microsoft.com/en-us/microsoft-teams/updateremove#removing-a-tab) are already hosted in Azure at `https://teams-get-started-sample.azurewebsites.net`. If you want to adapt this sample, you'll need to edit them and host them yourself.
 
 1. Clone the repo
 2. [Optional] Make a simple change to the visible text in the `public/tabconfig.html` and `public/tabremove.html` pages. This will help you later to verify your own copy of the tab is running.
 3. Host the `tabconfig.html` and `tabremove.html` pages over https (see below for options).
+4. Update the code in `tabconfig.html` so that the `removeUrl` it returns to Microsoft Teams (in two separate places) points to the new address of `tabremove.html` page from step 3. 
 4. Navigate to the `package` directory.
 5. Edit `manifest.json`:
    1. Change `id` to your own domain in reverse notation.
-   2. Change `configUrl` to the address of the `tabconfig.html` page from step 3.
+   2. Change `configUrl` to the new address of the `tabconfig.html` page from step 3.
    3. [Optional] Change `accentColor` to some color other than the default. This will help you later to verify your own copy of the tab is running.
 6. [Optional] Make a simple change to `maps44.png` and `maps88.png` in an image editor. This will help you later to verify your own copy of the tab is running.
 7. Zip up `manifest.json`, `maps44.png`, `maps88.png` into a new tab app package called `NewTab.zip`
@@ -42,7 +41,7 @@ This sample works because its [configuration page](https://teams-get-started-sam
 
 ## Host tab pages over https
 
-In order to protect customers and their data Microsoft Teams requires all tab pages and content to be served over https. If you already have a preferred method for doing this then feel free to skip this section. Otherwise, here are a few options to get you started.
+In order to protect customer data, Microsoft Teams requires all tab pages and content to be served over https. If you already have a preferred method for doing this then feel free to skip this section. Otherwise, here are a few options to get you started.
 
 ### Using ngrok
 
@@ -66,8 +65,8 @@ In order to protect customers and their data Microsoft Teams requires all tab pa
 
 ### Using IIS (Windows only)
 
-**TODO add instructions**
+[Set up an IIS website](https://support.microsoft.com/en-us/kb/323972)
 
-### Deploy to Azure
+### Deploy to Azure or other cloud computing service
 
-**TODO add link to instructions**
+[Get started here](https://azure.microsoft.com)
