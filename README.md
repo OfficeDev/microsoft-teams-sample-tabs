@@ -48,8 +48,8 @@ In order to protect customers and their data Microsoft Teams requires all tab pa
 
 1. Install [node.js](https://nodejs.org) if you don't already have it.
 2. Navigate to the repo root and run:
-    1. npm install
-    2. npm run start-ngrok
+    1. `npm install`
+    2. `npm run start-ngrok`
 3. Use the https URL displayed on the command line as the origin of the `tabconfig.html` page in step 5 above. It should look something like `https://<partial-guid>.ngrok.io/tabconfig.html`.
 
 ### Self-signed SSL certificate (Mac only)
@@ -57,11 +57,11 @@ In order to protect customers and their data Microsoft Teams requires all tab pa
 1. Install [node.js](https://nodejs.org) if you don't already have it.
 2. Navigate to the repo root.
 2. [One-time] Generate a self-signed SSL certificate and trust it:
-    1. openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -subj '/CN=localhost' -nodes
-    2. sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain cert.pem
+    1. `openssl req -x509 -newkey rsa:2048 -keyout key.pem -out cert.pem -days 365 -subj '/CN=localhost' -nodes`
+    2. `sudo security add-trusted-cert -d -r trustRoot -k /Library/Keychains/System.keychain cert.pem`
 3. Run the following commands to start the server:
-    1. npm install
-    2. npm run start-ssl
+    1. `npm install`
+    2. `npm run start-ssl`
 4. Use the https URL displayed on the command line as the origin of the `tabconfig.html` page in step 5 above. It will look something like `https://localhost:3443/tabconfig.html`.
 
 ### Using IIS (Windows only)
