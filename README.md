@@ -12,8 +12,8 @@ An [Office 365 account with access to Microsoft Teams](https://msdn.microsoft.co
 
 1. Download the [tab app package](https://github.com/OfficeDev/microsoft-teams-sample-get-started/blob/master/package/MapsTab.zip) for this sample.
 2. Create a new team for testing, if necessary.  Click **Create team** at the bottom of the left-hand panel.
-3. Select the team from the left-hand panel, select **... (more options)** and then select **View Team**.
-4. Select the **Developer (Preview)** tab, and then select **Upload**.
+3. Select the team from the left-hand panel, select **... (more options)** and then select **View Team**.  (Note: you must be the team owner, or on a team where the owner has allowed members to sideload.)
+4. Select the **Bots** tab, and then select **Sideload a bot or tab** on the lower right.
 5. Navigate to the zip file and select it.
 6. Go to any channel in the team.  Click the '+' to the right of the existing tabs.
 7. Select your tab from the gallery that appears.
@@ -29,11 +29,11 @@ This sample works because its [configuration page](https://msdn.microsoft.com/en
 3. Host the `tabconfig.html` and `tabremove.html` pages over https (see below for options).
 4. Navigate to the `package` directory.
 5. Edit `manifest.json`:
-    1. Change `id` to your own domain in reverse notation.
+    1. Change `id` (in both sections) to your own GUID.  You can use [this tool](https://guidgenerator.com/online-guid-generator.aspx) to create a new one.
     2. Change `configUrl` to the new address of the `tabconfig.html` page from step 3.
     3. [Optional] Change `accentColor` to some color other than the default. This will help you later to verify your own copy of the tab is running.
 6. [Optional] Make a simple change to `maps44.png` and `maps88.png` in an image editor. This will help you later to verify your own copy of the tab is running.
-7. Zip up `manifest.json`, `maps44.png`, `maps88.png` into a new tab app package called `NewTab.zip`
+7. Zip up `manifest.json`, `maps44.png`, `maps88.png` into a new tab app package called `NewTab.zip`.  Note: icons must be < 1.5k in size.
 8. Upload and test your new tab package, `NewTab.zip`, using the [instructions above](#run-the-app).
 
 > **Note:** To re-upload an updated package, with the same `id`, click the 'Replace' icon at the end of the tab's table row.  Don't click 'Upload' again: Microsoft Teams will say the tab already exists.
@@ -90,4 +90,4 @@ In order to protect customer data, Microsoft Teams requires all tab pages and co
 
 
 ## Copyright
-Copyright (c) 2016 Microsoft Corporation. All rights reserved.
+Copyright (c) 2017 Microsoft Corporation. All rights reserved.
