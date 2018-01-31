@@ -1,0 +1,19 @@
+### YamlMime:Sample
+sample:
+- name: Microsoft Teams 'Get Started' sample tab app
+  path: ''
+  description: This is a basic example tab app for Microsoft Teams. When it is added to a channel, it enables the user to choose whether they want a Bing Map or a Google Map in their new tab. When it is removed from a channel, it offers (pretend) options for the user to choose whether the map is deleted or retained online.
+  readme: ''
+  generateZip: FALSE
+  isLive: TRUE
+  technologies:
+  - Microsoft Teams tabs
+  azureDeploy: ''
+  author: richardtaylorrt
+  platforms: []
+  languages:
+  - node.js
+  extensions:
+    products:
+    - Microsoft Teams
+    scenarios: []
