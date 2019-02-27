@@ -1,3 +1,19 @@
+---
+topic: sample
+products:
+- Microsoft Teams
+- Office 365
+languages:
+- HTML
+- node.js
+extensions:
+  contentType: samples
+  technologies:
+  - Microsoft Bot Framework
+  - Tabs
+  - Add-ins
+  createdDate: 10/28/2016 4:34:42 PM
+---
 # Microsoft Teams 'Get Started' sample tab app
 
 This is a basic example tab app for Microsoft Teams.  When it is added to a channel, it enables the user to choose whether they want a Bing Map or a Google Map in their new tab.  When it is removed from a channel, it offers (pretend) options for the user to choose whether the map is deleted or retained online.
