@@ -20,10 +20,10 @@ This repository contains samples for building apps with tabs in ASP.NET Core on 
 
 | Sample Name | Technology | Instructions |
 |-------------|------------|--------------|
-| Channel and group tabs | ASP.NET Core + Razor | [Walkthrough](https://docs.microsoft.com/microsoftteams/platform/tabs/quickstarts/create-channel-group-tab-dotnet-core) |
-| Channel and group tabs | ASP.NET Core + MVC | [Walkthrough](https://docs.microsoft.com/microsoftteams/platform/tabs/quickstarts/create-channel-group-tab-dotnet-core-mvc) |
-| Personal tabs | ASP.NET Core + Razor | [Walkthrough](https://docs.microsoft.com/microsoftteams/platform/tabs/quickstarts/create-personal-tab-dotnet-core) |
-| Personal tabs | ASP.NET Core + MVC | [Walkthrough](https://docs.microsoft.com/microsoftteams/platform/tabs/quickstarts/create-personal-tab-dotnet-core-mvc) |
+| Channel and group tabs | ASP.NET Core + Razor | [Quickstart](https://docs.microsoft.com/samples/officedev/microsoft-teams-samples/channel-and-group-tabs-in-aspnet-core-with-razor-pages/) |
+| Channel and group tabs | ASP.NET Core + MVC | [Quickstart](https://docs.microsoft.com/samples/officedev/microsoft-teams-samples/channel-and-group-tabs-in-aspnet-core-with-mvc/) |
+| Personal tabs | ASP.NET Core + Razor | [Quickstart](https://docs.microsoft.com/samples/officedev/microsoft-teams-samples/personal-tab-with-aspnet-core/) |
+| Personal tabs | ASP.NET Core + MVC | [Quickstart](https://docs.microsoft.com/samples/officedev/microsoft-teams-samples/personal-tab-with-asp-net-core-mvc/) |
 
 ## Copyright
 Copyright (c) 2017 Microsoft Corporation. All rights reserved.
